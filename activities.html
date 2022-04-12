@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGWFNYR1ZM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CGWFNYR1ZM');
+    </script>
+    
+    <script src="https://kit.fontawesome.com/488bdcecdd.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Activities: What to Do</title>
+</head>
+
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+
+    <header>
+    <nav id="pages">
+        <ul class = "links">
+            <li><a href = "index.html" >New York</a></li>
+            <li class="active"><a href = "activities.html">Activities</a></li>
+            <li><a href = "attractions.html">Attractions</a></li>
+            <li><a href = "museums.html">Museums</a></li>
+            <li><a href = "create.html">Create</a></li>
+            <li><a href = "contact.html">Contact</a></li>   
+        </ul>
+    </nav>
+    </header>
+    
+    <main id = "main">
+        <img src = "images/skyline1.jpg" class = "skyline" alt = "Illustration of New York Skyline" width="200"/>
+
+        <h1>Activities to do in New York</h1>
+        <p>There are a vast range of activities that can be done, whether it is active or not.  There are many different activities that can be done as these activities 
+        are apart of New York City while enabling satisfaction.  With the satisfaction, it can bring feelings of joy and new experiences with the different 
+        environment and lifestyle.  The entertainment it brings attracts many different visitors as they want to experience them all at once.  Many people are 
+        attracted to these activites while it creates a connection between the persobal individual being and New York City.  Once you go, you will see and feel
+        a sense of belonging to the city of New York.</p>
+        <div class = "activities">
+            <img src = "images/musical.png" class = "activitypic" alt = "Outside of the building of the musical Legally Blonde" width="200"/>
+            <img src = "images/dining.png" class = "activitypic" alt = "Luxurious dining at the New York view scenery" width="200"/>
+            <img src = "images/subway.png" class = "activitypic" alt = "Inside of subway station with people waiting as subway arrives" width="200"/>
+            <img src = "images/nightview.png" class = "activitypic" alt = "New York scenery in night view full of lights" width="200"/>
+        </div>
+        <p>With the range of activities out there, there can be many different options to choose between while enjoying the life in the city.  These activites are
+        full of adventures that bring excitement and allows for more discovery in what there is to do.  While choosing between activities, make sure to choose
+        effectively while making sure that they fit within your planned schedule and other activities, making sure that it is balanced but also having a 
+        fulfilled no time wasted plan.  Therefore, once again, there is no time to waste.</p>
+        
+        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
+
+
+    </main>
+    
+        <footer>
+            <p class="copyright" id = "namefooter"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
+        </footer>
+    
+        <script>
+            function modedisplay(item) {
+                var element = document.body;
+                var element1 = document.getElementById("namefooter");
+                var element2 = document.getElementById("pages");
+    
+                if (item.innerText == 'Dark Mode') {
+                    item.innerText = 'Light Mode';
+                    element2.classList.toggle("dark-mode2");
+                    element1.classList.toggle("dark-mode1");
+                    element.classList.toggle("dark-mode");
+
+                    
+                }
+    
+                else {
+                    item.innerText = 'Dark Mode';
+                    element2.classList.toggle("dark-mode2");
+                    element1.classList.toggle("dark-mode1");
+                    element.classList.toggle("dark-mode");
+
+                }
+            }
+        </script>
+    
+    </body>
+    </html>

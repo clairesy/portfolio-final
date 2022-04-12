@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGWFNYR1ZM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CGWFNYR1ZM');
+    </script>
+    
+    <script src="https://kit.fontawesome.com/488bdcecdd.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>New York City</title>
+</head>
+
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+
+    <header>
+        <nav id = "pages">
+			<ul class = "links">
+				<li class="active"><a href = "index.html" >New York</a></li>
+				<li id = "option"><a href = "activities.html">Activities</a></li>
+				<li id = "option"><a href = "attractions.html">Attractions</a></li>
+				<li id = "option"><a href = "museums.html">Museums</a></li>
+                <li><a href = "create.html">Create</a></li>
+                <li id = "option"><a href = "contact.html">Contact</a></li>   
+			</ul>
+        </nav>
+    </header>
+    
+    <main id = "main">
+            <div class="beginning">
+                <div class = 'fly'>
+                    <img src="images/plane.png" alt="plane">
+                </div>
+            <h1 id = "introtitle">Welcome to New York!</h1>
+        </div>
+        
+        <p> Hi! Welcome to my website talking about New York and overall general information of recommendations of what to do.  You may be wondering what there is to do 
+    in New York City and this website will talk about recommendations of what to do as I hope it can help you plan and make a 
+    visit to New York City.  Where and what is New York? New York City is located around in the northeastern part of the United States.  New York is a very popular 
+    tourist site as I hope you will be able to learn about New York and what is around there.  There are many places to explore and visit here as it can bring
+     excitement to your exploration of the city.  It is known to be the city that does not sleep as many people enjoy the thrill of the life of the city.</p>
+        <div class="flip-card">
+            <div class="flip-card-inner" tabindex="0">
+            <div class="flip-card-front">
+                <img src = "images/view.png" class = "viewpic" id = "view" alt = "The sky view of New York City full of buildings and skyscrapers" width="200"/>
+            </div>
+            <div class="flip-card-back">
+                <h1>New York Skyscrapers</h1> 
+                <p>Manhattan </p> 
+                <p>The adventures of city urban life of New York City begins here!</p>
+            </div>
+        </div>
+        </div>
+        <p>Through every season, there are many different places to visit as they are unique through their different places and excitment it can bring to 
+    ones thrilling experience.  New York is alive with many different activities, museums, and attractions that make up to what New York City is.  New York is full of skyscrapers 
+    and monuments while enabling a flourishing experience.  The city itself is alive all day as there can be activities done whether it be outdoor or indoor as well as many different
+    options to do based on budget.  New York City is the perfect city to visit and find what you want to do while exploring the city life.</p>
+
+    
+    <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
+
+    </main>
+
+    <footer>
+        <p class="copyright" id = "namefooter"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
+    </footer>
+
+    <script>
+		function modedisplay(item) {
+            var element = document.body;
+            var element1 = document.getElementById("namefooter");
+            var element2 = document.getElementById("introtitle");
+
+			if (item.innerText == 'Dark Mode') {
+				item.innerText = 'Light Mode';
+                element1.classList.toggle("dark-mode1");
+                element.classList.toggle("dark-mode");
+                element2.classList.toggle("dark-mode2");
+                pic = "images/nightview1.png";
+                document.getElementById('view').src = pic;
+                
+            }
+
+			else {
+				item.innerText = 'Dark Mode';
+                element1.classList.toggle("dark-mode1");
+                element.classList.toggle("dark-mode");
+                element2.classList.toggle("dark-mode2");
+                pic = "images/view.png";
+                document.getElementById('view').src = pic;
+			}
+		}
+    </script>
+
+</body>
+</html>

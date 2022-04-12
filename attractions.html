@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGWFNYR1ZM"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CGWFNYR1ZM');
+    </script>
+
+    <script src="https://kit.fontawesome.com/488bdcecdd.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+	<link rel="stylesheet" href="css/style.css">
+    <title>Attractions</title>
+</head>
+
+<body>
+    <a class = "skip" href="#main">Skip to Main Content</a>
+
+    <header>
+        <nav id="pages">
+			<ul class = "links">
+                <li><a href = "index.html" >New York</a></li>
+                <li><a href = "activities.html">Activities</a></li>
+                <li class="active"><a href = "attractions.html">Attractions</a></li>
+                <li><a href = "museums.html">Museums</a></li>
+                <li><a href = "create.html">Create</a></li>
+                <li><a href = "contact.html">Contact</a></li>   
+            </ul>
+        </nav>
+    </header>
+    
+    <main id ="main">
+        <h1>Attractions in New York</h1>
+        <section>
+            <h2>Surrounding Areas</h2>
+            <p>I will be talking about what attractions there are in New York City as they are the biggest hot spots in where many people go and visit New York City.  There are
+            an uncountable number of attractions are they are close together while being a couple blocks away from each other, allowing for visitors to visit many 
+            places all at once.  With the surrounding attractions, it is recommended to stay around 4 to 7 days as you would be able to see all the attractions around you and what
+            is out there to do as there are many things that can be done that time should not be wasted!  So when in New York, choose time wisely while picking which
+            attractions you would want to go.</p>
+        </section>
+        <section>
+            <h2>The Best Sights</h2>
+            <p>These attractions are the symbols of New York City as there are many options between going inside and outside.  Many of these include scenic views while also 
+            including a mind blown experience of not only the mix of city and urban life but also the scene of nature and serenity, giving balance among the two.  These 
+            attractions are perfect for friends, family, couples, and a vast variety within the options of traveling and vacation.  Each of then have a unique experience
+            but also bring apart to the scenes and landscapes of New York City.  There is so much to do!</p>
+        </section>
+        <div class = "attractions">
+            <div class="attractions_images">
+                <img src = "images/hudsonpark.png" class = "attractionpic" alt = "Bridge at Hudson Park with New York City view" width="200"/>
+                <img src = "images/centralpark.png" class = "attractionpic" alt = "Central Park full of trees and water" width="200"/>
+                <img src = "images/vessel.png" class = "attractionpic" alt = "Towering, tall building of the Vessel" width="200"/>
+                <img src = "images/brooklynbridge.png" class = "attractionpic" alt = "View of Brooklyn bridge that go towards" width="200"/>
+                <img src = "images/empirestate.png" class = "attractionpic" alt = "Scenery with Empire State with other buildings" width="200"/>
+                <img src = "images/statueofliberty.png" class = "attractionpic" alt = "Statue of Liberty standing out in the water" width="200"/>
+                <img src = "images/highline.png" class = "attractionpic" alt = "Group of people walking around the High Line" width="200"/>
+                <img src = "images/washingtonsquare.png" class = "attractionpic" alt = "Slightly upward view of Washington Square" width="200"/>
+                <img src = "images/rockefeller.png" class = "attractionpic" alt = "Gold statue at water fountain at Rockfeller" width="200"/>
+                <img src = "images/grandcentralterminal.png" class = "attractionpic" alt = "Inside of empty Grand Central Terminal" width="200"/>
+            </div>
+        </div>
+            
+        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
+
+
+    </main>
+    
+        <footer>
+            <p class="copyright" id = "namefooter"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
+        </footer>
+    
+        <script>
+            function modedisplay(item) {
+                var element = document.body;
+                var element1 = document.getElementById("namefooter");
+                var element2 = document.getElementById("pages");
+    
+                if (item.innerText == 'Dark Mode') {
+                    item.innerText = 'Light Mode';
+                    element2.classList.toggle("dark-mode2");
+                    element1.classList.toggle("dark-mode1");
+                    element.classList.toggle("dark-mode");
+
+                    
+                }
+    
+                else {
+                    item.innerText = 'Dark Mode';
+                    element2.classList.toggle("dark-mode2");
+                    element1.classList.toggle("dark-mode1");
+                    element.classList.toggle("dark-mode");
+
+                }
+            }
+        </script>
+    
+    </body>
+    </html>
