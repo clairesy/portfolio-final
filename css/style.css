@@ -462,16 +462,14 @@ footer p {
         transform: none;
     }
 
-    .blob, .blob2, .blob3{
+    .blob, .blob2, .blob3, .frame, .framecontent{
         display: none;
     }
 
     .beginning{
         background-attachment: initial;
     }
-    .frame{
-        display: none;
-    }
+
 }
 
 @media screen and (min-width: 900px){
