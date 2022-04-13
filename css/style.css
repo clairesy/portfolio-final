@@ -2,20 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap');
 
-.frame{
-    padding-top: 56.25%;
-    position: relative;
+.pigeonbackground{
+    background-color:#5987f1;
 }
 
-.frame iframe {
-    overflow: hidden;
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
- }
+#pigeonfont{
+    font-weight: bold;
+}
+
 
 #main .button{
     margin-bottom: 10px;
