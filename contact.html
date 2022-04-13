@@ -18,7 +18,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Contact</title>
@@ -39,6 +38,9 @@
     </header>
 
     <main class="contact", id = "main">
+        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
+
+
         <h1>Contact Me</h1>
         <div class = "form">
             <h2 class="contactme">Have any questions or suggestions about where to go when traveling in New York? <br>I am always happy to answer your questions and hear your suggestions!</h2>
@@ -63,15 +65,13 @@
                 </fieldset>
             </form>
         </div>
-        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
-
 
     </main>
     
         <footer>
             <p class="copyright" id = "namefooter"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
         </footer>
-    
+
         <script>
             function modedisplay(item) {
                 var element = document.body;

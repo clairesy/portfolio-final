@@ -38,7 +38,10 @@
     </nav>
     </header>
     
+    
     <main id = "main">
+        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
+        
         <img src = "images/skyline1.jpg" class = "skyline" alt = "Illustration of New York Skyline" width="200"/>
 
         <h1>Activities to do in New York</h1>
@@ -58,15 +61,16 @@
         effectively while making sure that they fit within your planned schedule and other activities, making sure that it is balanced but also having a 
         fulfilled no time wasted plan.  Therefore, once again, there is no time to waste.</p>
         
-        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
 
 
     </main>
-    
+
+        
         <footer>
             <p class="copyright" id = "namefooter"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
         </footer>
     
+      
         <script>
             function modedisplay(item) {
                 var element = document.body;
@@ -91,6 +95,9 @@
                 }
             }
         </script>
+
+
+
     
     </body>
     </html>

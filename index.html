@@ -21,7 +21,12 @@
     <link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
     <title>New York City</title>
+
+
+
 </head>
+
+
 
 <body>
     <a class = "skip" href="#main">Skip to Main Content</a>
@@ -39,19 +44,24 @@
     </header>
     
     <main id = "main">
+        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
             <div class="beginning">
                 <div class = 'fly'>
                     <img src="images/plane.png" alt="plane">
                 </div>
             <h1 id = "introtitle">Welcome to New York!</h1>
         </div>
+
+
         
         <p> Hi! Welcome to my website talking about New York and overall general information of recommendations of what to do.  You may be wondering what there is to do 
     in New York City and this website will talk about recommendations of what to do as I hope it can help you plan and make a 
     visit to New York City.  Where and what is New York? New York City is located around in the northeastern part of the United States.  New York is a very popular 
     tourist site as I hope you will be able to learn about New York and what is around there.  There are many places to explore and visit here as it can bring
      excitement to your exploration of the city.  It is known to be the city that does not sleep as many people enjoy the thrill of the life of the city.</p>
-        <div class="flip-card">
+        
+
+     <div class="flip-card">
             <div class="flip-card-inner" tabindex="0">
             <div class="flip-card-front">
                 <img src = "images/view.png" class = "viewpic" id = "view" alt = "The sky view of New York City full of buildings and skyscrapers" width="200"/>
@@ -67,9 +77,13 @@
     ones thrilling experience.  New York is alive with many different activities, museums, and attractions that make up to what New York City is.  New York is full of skyscrapers 
     and monuments while enabling a flourishing experience.  The city itself is alive all day as there can be activities done whether it be outdoor or indoor as well as many different
     options to do based on budget.  New York City is the perfect city to visit and find what you want to do while exploring the city life.</p>
-
     
-    <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
+    <h2>Have no clue where to go or what to do?</h2>
+    <p>Explore the other pages! But before you go through the adventures and attractions of New York, play with the New York pigeon by dragging and clicking anywhere!</p>
+   
+    <div class = "frame">
+        <iframe src="../pigeon/index.html"></iframe>
+    </div>
 
     </main>
 
@@ -101,7 +115,9 @@
                 pic = "images/view.png";
                 document.getElementById('view').src = pic;
 			}
+            
 		}
+
     </script>
 
 </body>
