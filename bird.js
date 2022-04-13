@@ -14,8 +14,8 @@ function setup() {
   createParticles(); 
   createSpringMeshConnectingParticles(); 
 
-  wingR = loadImage("/pigeon/right.svg"); 
-  wingL = loadImage("/pigeon/left.svg"); 
+  wingR = loadImage("right.svg"); 
+  wingL = loadImage("left.svg"); 
   ledgeHeight = height/2.2+203;
 }
 
