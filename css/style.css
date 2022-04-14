@@ -314,7 +314,7 @@ input[type=submit]:hover {
 
 
 /*Culture*/
-.museums, .activities{
+.activities{
 	display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -403,7 +403,7 @@ footer p {
     width: 300px;
 }
 
-.fliptitle{
+.fliptitle,fliptitle1{
     text-align: center;
 }
 
