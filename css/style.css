@@ -2,6 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway:wght@300&display=swap');
 
+  
+#contactpic{
+    display: block;
+    margin: auto;
+    width: 325px;
+    margin: 5px;
+}
+
+/* Skip*/
+a.skip {
+    position: absolute;
+    left: -500px;
+    background-color: #FFF;
+    padding: 2px;
+    text-decoration: none;
+}
+
+a.skip:focus {
+    left: 10px;
+    top: 10px;
+}
+
+iframe{
+    width: 100%;
+    height: 600px; 
+}
+
+.attractions_images p{
+    font-size: 18px;
+}
+
 .pigeonbackground{
     background-color:#5987f1;
 }
@@ -12,7 +43,7 @@
 
 
 #main .button{
-    margin-bottom: 10px;
+    margin: 20px 0;
 }
 
 .blob {
@@ -174,16 +205,17 @@ img{
     background-repeat: no-repeat;
 }
 
-.viewpic{
-    width: 400px;
-    height: 300px;
-	border-radius: 16px;
+#view{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Attractions*/
 .attractions_images{
     display: grid;
-    grid-template-columns: repeat(2,1fr); 
+    grid-template-columns: 1fr; 
     column-gap: 16px;
     justify-content: center;
     align-content: center;  
@@ -294,19 +326,6 @@ input[type=submit]:hover {
     padding: 5px;
 }
 
-/* Skip*/
-a.skip {
-    position: absolute;
-    left: -500px;
-    background-color: #FFF;
-    padding: 2px;
-
-}
-a.skip:focus {
-    position: fixed;
-    left: 10px;
-    top: 10px;
-}
 
 /* Nav */
 header{
@@ -324,6 +343,7 @@ nav{
 .links{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 nav li{
@@ -352,13 +372,17 @@ nav a:hover{
 }
 
 nav a:active{
-    color: rgb(138, 169, 226);
+    color: rgb(183, 205, 245);
     text-transform: uppercase;
 }
 
 .active a {
     color: #864485;
     font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 17px;
+    background-color: #adc1f0;
 }
 
 /* Footer */
@@ -377,49 +401,44 @@ footer p {
 /*Flipcard*/
 .flip-card {
     background-color: transparent;
-    width: 400px;   
+    width: 400px;
     height: 300px;
-    padding-bottom: 30px;
     perspective: 1000px;
     margin-left: auto;
     margin-right: auto;
-}
+    margin-top: 25px;
+  }
 
-
-.flip-card-inner {
+  .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 10px;
     text-align: center;
-    transition: transform 0.7s;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-}
-  
-.flip-card:hover .flip-card-inner{
+  }
+
+  .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-}
-  
-.flip-card-front, .flip-card-back {
+  }
+
+  .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
-    border-radius: 16px;
-}
-  
-.flip-card-front {
-    background-color: rgb(236, 236, 236);
-    color: black;
-}
-  
-.flip-card-back {
-    background-color: #d6c3efc7;
+  }
+
+  .flip-card-front {
     color: #000000;
+  }
+
+  .flip-card-back {
+    background-color: rgb(127, 66, 129);
+    color: white;
     transform: rotateY(180deg);
-}
-  
+  }
   
 @keyframes fly { 
     0% { transform: translateY(0); }
@@ -437,6 +456,7 @@ footer p {
     width: 160px;
     border: none;
 }
+
 
   
 
@@ -466,10 +486,43 @@ footer p {
 
 }
 
+
+@media screen and (min-width: 660px){
+    .attractions_images{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3vw;
+        row-gap: 2vw;
+        align-items: stretch;
+    }
+    iframe{
+        height: 700px; 
+    }
+
+    
+}
+
 @media screen and (min-width: 900px){
     .links{
         display: flex;
         flex-direction: row;
-    }	
+        justify-content: space-around;
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .attractions_images{
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 3vw;
+        row-gap: 2vw;
+        align-items: stretch;
+    }
+    .museums{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;  
+    }
+    iframe{
+        height: 800px; 
+    }
 
 }
