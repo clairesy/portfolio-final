@@ -16,12 +16,16 @@ a.skip {
     left: -500px;
     background-color: #FFF;
     padding: 2px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a.skip:focus {
     left: 10px;
     top: 10px;
+}
+
+.skip:hover{
+    color: #515151;
 }
 
 iframe{
@@ -213,12 +217,10 @@ img{
 /*Attractions*/
 .attractions_images{
     display: grid;
-    grid-template-columns: 1fr; 
-    column-gap: 14px;
-    justify-content: center;
-    align-content: center;  
-    row-gap: 12px;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    align-items: center;
+    row-gap: 18px;
+    column-gap: 15px;
 }
 
 .attractions img{
@@ -371,17 +373,16 @@ nav a:hover{
 }
 
 nav a:active{
-    color: rgb(183, 205, 245);
+    color: #93A5D2;
     text-transform: uppercase;
 }
 
 .active a {
-    color: #864485;
     font-weight: bold;
     text-decoration: underline;
     padding: 10px;
     border-radius: 17px;
-    background-color: #adc1f0;
+    background-color: #6985c7;
 }
 
 /* Footer */
@@ -438,7 +439,7 @@ footer p {
   
 .back {
     transform: rotateY(180deg);
-    background-color: #975da7;
+    background-color: #D1B7D7;
     border-radius: 10px;
     color: black;
     text-align: center;
@@ -505,7 +506,7 @@ footer p {
 }
 
 
-@media screen and (min-width: 550px){
+@media screen and (min-width: 650px){
     .attractions_images{
         grid-template-columns: 1fr 1fr;
         column-gap: 3vw;

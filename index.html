@@ -29,7 +29,7 @@
 
 
 <body>
-    <a class = "skip" href="#main">Skip to Main Content</a>
+    <a class="skip" href="#main">Skip to Main Content</a>
 
     <header>
         <nav>
@@ -43,7 +43,7 @@
         </nav>
     </header>
     
-    <main id = "main">
+    <main id ="main">
         <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
             <div class="beginning">
                 <h1 id = "introtitle">Welcome to New York!</h1>
@@ -51,7 +51,7 @@
                     <img src="images/plane.png" alt="plane">
                 </div>
         </div>
-        
+        <h2>Introduction</h2>
         <p> Hi! Welcome to my website talking about New York and overall general information of recommendations of what to do.  You may be wondering what there is to do 
     in New York City and this website will talk about recommendations of what to do as I hope it can help you plan and make a 
     visit to New York City.  Where and what is New York? New York City is located around in the northeastern part of the United States.  New York is a very popular 
@@ -75,11 +75,22 @@
     ones thrilling experience.  New York is alive with many different activities, museums, and attractions that make up to what New York City is.  New York is full of skyscrapers 
     and monuments while enabling a flourishing experience.  The city itself is alive all day as there can be activities done whether it be outdoor or indoor as well as many different
     options to do based on budget.  New York City is the perfect city to visit and find what you want to do while exploring the city life.</p>
-    
+    <div class="flip-card" tabindex="0">
+        <div class="flip-card-inner">
+            <div class="front">
+                <img src="images/diverse.png" alt="Diverse groups of people walking the busy streets of New York City">
+        </div>
+        <div class="back">
+            <h3 id = "fliptitle">Best City Attraction</h3>
+            <p>Come visit the land of diversity, culture, arts, tourism, and much more!</p>
+        </div>
+    </div>
+</div>     
+
     <div class = "framecontent">
 	    <h2>Have no clue where to go or what to do?</h2>
 	    <p>Explore the other pages! But before you go through the adventures and attractions of New York, play with the New York pigeon!</p>
-        <iframe src="pigeon.html" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe title ="myFrame" src="pigeon.html" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
          <!-- Got from reference to: https://webcast.ec.europa.eu/cms/index.php/en/streaming/embedding/instructions/ict-standardisation-workshop-2, https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe-->
     </div>
     </main>

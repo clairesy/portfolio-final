@@ -18,6 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Contact</title>
@@ -26,7 +27,7 @@
 <body>
     <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
-        <nav id="pages">
+        <nav>
             <ul class = "links">
                 <li><a href = "index.html" >New York</a></li>
 				<li><a href = "activities.html">Activities</a></li>
@@ -37,24 +38,8 @@
         </nav>
     </header>
 
-    <main id="contact">
-        <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
-			<div class="flip-card" tabindex="0">
-				<div class="flip-card-inner">
-					<div class="front">
-						<img src="images/diverse.png" alt="Diverse groups of people walking the busy streets of New York City">
-				</div>
-				<div class="back">
-					<h3 id = "fliptitle">Best City Attraction</h3>
-                    <p>Come visit the land of diversity, culture, arts, tourism, and much more!</p>
-				</div>
-			</div>
-		</div>     
-
-     
-
+    <main class="contact", id = "main">
         <h1>Contact Me</h1>
-
         <div class = "form">
             <h2 class="contactme">Have any questions or suggestions about where to go when traveling in New York? <br>I am always happy to answer your questions and hear your suggestions!</h2>
 
@@ -78,37 +63,19 @@
                 </fieldset>
             </form>
         </div>
-
-    </main>
-    
-        <footer>
-            <p class="copyright" id = "namefooter"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
-        </footer>
+        <button class="button" onclick="myFunction()">Switch mode</button>
 
         <script>
-            function modedisplay(item) {
-                var element = document.body;
-                var element1 = document.getElementById("namefooter");
-                var element2 = document.getElementById("pages");
-    
-                if (item.innerText == 'Dark Mode') {
-                    item.innerText = 'Light Mode';
-                    element2.classList.toggle("dark-mode2");
-                    element1.classList.toggle("dark-mode1");
-                    element.classList.toggle("dark-mode");
-
-                    
-                }
-    
-                else {
-                    item.innerText = 'Dark Mode';
-                    element2.classList.toggle("dark-mode2");
-                    element1.classList.toggle("dark-mode1");
-                    element.classList.toggle("dark-mode");
-
-                }
+            function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode");
+               
             }
         </script>
-    
-    </body>
-    </html>
+    </main>
+    <footer>
+        <p class="copyright"><i class="fa-solid fa-plane-departure"></i> Claire Yang &copy; 2022 <i class="fa-solid fa-plane-arrival"></i></p>
+    </footer>
+</body>
+
+</html>
