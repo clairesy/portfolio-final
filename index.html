@@ -32,7 +32,7 @@
     <a class = "skip" href="#main">Skip to Main Content</a>
 
     <header>
-        <nav>
+        <nav id = "pages">
 			<ul class = "links">
 				<li class="active"><a href = "index.html" >New York</a></li>
 				<li><a href = "activities.html">Activities</a></li>
@@ -46,10 +46,10 @@
     <main id = "main">
         <button class = "button" onclick="modedisplay(this)">Dark Mode</button>
             <div class="beginning">
-                <h1 id = "introtitle">Welcome to New York!</h1>
                 <div class = 'fly'>
                     <img src="images/plane.png" alt="plane">
                 </div>
+            <h1 id = "introtitle">Welcome to New York!</h1>
         </div>
 
 
@@ -60,19 +60,30 @@
     tourist site as I hope you will be able to learn about New York and what is around there.  There are many places to explore and visit here as it can bring
      excitement to your exploration of the city.  It is known to be the city that does not sleep as many people enjoy the thrill of the life of the city.</p>
         
-    
-    <img src = "images/view.png" class = "viewpic" class = "intropic" alt = "The sky view of New York City full of buildings and skyscrapers" width="200"/>
 
-        
+     <div class="flip-card">
+            <div class="flip-card-inner" tabindex="0">
+            <div class="flip-card-front">
+                <img src = "images/view.png" class = "viewpic" id = "view" alt = "The sky view of New York City full of buildings and skyscrapers" width="200"/>
+            </div>
+            <div class="flip-card-back">
+                <h1>New York Skyscrapers</h1> 
+                <p>Manhattan </p> 
+                <p>The adventures of city urban life of New York City begins here!</p>
+            </div>
+        </div>
+        </div>
         <p>Through every season, there are many different places to visit as they are unique through their different places and excitment it can bring to 
     ones thrilling experience.  New York is alive with many different activities, museums, and attractions that make up to what New York City is.  New York is full of skyscrapers 
     and monuments while enabling a flourishing experience.  The city itself is alive all day as there can be activities done whether it be outdoor or indoor as well as many different
     options to do based on budget.  New York City is the perfect city to visit and find what you want to do while exploring the city life.</p>
     <div class = "framecontent">
-	    <h2>Have no clue where to go or what to do?</h2>
-	    <p>Explore the other pages! But before you go through the adventures and attractions of New York, play with the New York pigeon!</p>
-        <iframe src="pigeon.html" frameborder="0" scrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+        <h2>Have no clue where to go or what to do?</h2>
+        <p>Explore the other pages! But before you go through the adventures and attractions of New York, play with the New York pigeon by dragging and clicking anywhere!</p>
+    </div>  
+    <div class = "frame">
+        <iframe src="pigeon.html"></iframe>
+    </div>
 
     </main>
 
@@ -85,7 +96,6 @@
             var element = document.body;
             var element1 = document.getElementById("namefooter");
             var element2 = document.getElementById("introtitle");
-            
 
 			if (item.innerText == 'Dark Mode') {
 				item.innerText = 'Light Mode';
