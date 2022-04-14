@@ -510,7 +510,7 @@ footer p {
     .attractions_images{
         grid-template-columns: 1fr 1fr;
         column-gap: 3vw;
-        row-gap: vw;
+        row-gap: 2vw;
         align-items: stretch;
     }
     iframe{
@@ -561,8 +561,8 @@ footer p {
 
     .attractions_images{
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2vw;
-        row-gap: vw;
+        column-gap: 3vw;
+        row-gap: 2vw;
         align-items: stretch;
     }
     
